@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Parlour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Watch Parlour!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Analog Watch">
+            </div>
+            <div class="carousel-item">
+                <img src="https://as2.ftcdn.net/v2/jpg/03/40/04/33/1000_F_340043322_9ynAnyqBYKycgxapGGv1WrQW1ZUwMyDM.jpg" alt="Smart Watch">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.hdwallpapers.in/thumbs/2021/rolex_gold_blue_stainless_steel_watch_hd_rolex-t2.jpg" alt="Diver Watch">
+            </div>
+        </div>
+        <button class="carousel-prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="carousel-next" onclick="moveCarousel(1)">&#10095;</button>
+    </section>
+
+    <section class="quiz">
+        <h2>What Type of Watch Matches Your Style?</h2>
+        <div id="quiz-container">
+            <p id="question">Question 1: What's your favourite activity?</p>
+            <button onclick="answer('Sports')">Sports</button>
+            <button onclick="answer('Business')">Business</button>
+            <button onclick="answer('Casual')">Casual</button>
+        </div>
+    </section>
+
+    <section class="joke">
+        <h2>Fun Watch Joke!</h2>
+        <p id="joke">Loading joke...</p>
+        <button onclick="fetchJoke()">Get a New Joke</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Watch Parlour. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
